@@ -1,0 +1,31 @@
+.news {
+    position: relative;
+    min-height: 300px;
+    margin-top: 5%;
+    h2 {
+        letter-spacing: 0.8rem;
+    }
+    form {
+        input {
+            padding: 1.2rem 4rem;
+        }
+        button {
+            padding: 1.2rem 1.5rem;
+            position: relative;
+            left: -4%;
+            top: 0.3rem;
+            outline: none;
+            &>* {
+                position: relative;
+                top: 0.3rem;
+            }
+        }
+    }
+    @media (max-width: 768px) {
+        margin-top: 3%;
+        min-height: 200px;
+        h2 {
+            font-size: 2rem;
+        }
+    }
+}

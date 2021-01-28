@@ -1,0 +1,23 @@
+.contact {
+    &-text-content {
+        width: 60%;
+    }
+    &-info {
+        @media (max-width: 768px) {
+            grid-template-columns: 300px;
+            grid-template-rows: auto;
+        }
+        &-item {
+            span {
+                padding: 0.5rem 0;
+            }
+            border: 1px solid;
+            padding: 2rem 1.5rem;
+            display: flex;
+            flex-direction: column;
+        }
+        &-map {
+            margin-top: 8%;
+        }
+    }
+}

@@ -1,0 +1,140 @@
+.category {
+  min-height: 600px;
+}
+
+.category .grid {
+  -ms-grid-rows: (250px)[2];
+      grid-template-rows: repeat(2, 250px);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+@media (max-width: 768px) {
+  .category .grid {
+    -ms-grid-columns: 300px;
+        grid-template-columns: 300px;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+  }
+}
+
+.grid-item {
+  height: 100%;
+  position: relative;
+}
+
+.grid-item h2 {
+  position: relative;
+  top: 45%;
+}
+
+.grid-item button {
+  position: relative;
+  top: 75%;
+  left: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-self: flex-end;
+  padding: 2rem;
+  z-index: 9999;
+}
+
+.grid-item-a {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 3;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 3;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.grid-item-b button {
+  top: 55%;
+  left: 70%;
+}
+
+.grid-item-c button {
+  top: 55%;
+  left: 70%;
+}
+
+.grid-item-d {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  -ms-grid-column: 4;
+      grid-column-start: 4;
+  grid-column-end: 4;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.grid-item-d button {
+  left: 70%;
+  top: 78%;
+}
+
+@media (max-width: 768px) {
+  .grid-item {
+    height: 25rem;
+    position: relative;
+  }
+  .grid-item h2 {
+    position: relative;
+    top: 45%;
+  }
+  .grid-item button {
+    position: relative;
+    top: 75%;
+    left: 80%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-self: flex-end;
+    padding: 2rem;
+    z-index: 9999;
+  }
+  .grid-item-a {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 2;
+    -ms-grid-row: 1;
+        grid-row-start: 1;
+    grid-row-end: 2;
+  }
+  .grid-item-a button {
+    position: relative;
+    top: 50%;
+    left: 70%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-self: flex-end;
+    padding: 2rem;
+    z-index: 9999;
+  }
+  .grid-item-b button {
+    top: 55%;
+    left: 70%;
+  }
+  .grid-item-c button {
+    top: 55%;
+    left: 70%;
+  }
+  .grid-item-d {
+    -ms-grid-column: auto;
+        grid-column-start: auto;
+    grid-column-end: auto;
+    -ms-grid-row: auto;
+        grid-row-start: auto;
+    grid-row-end: auto;
+  }
+  .grid-item-d button {
+    left: 70%;
+    top: 55%;
+  }
+}
+/*# sourceMappingURL=Category.css.map */

@@ -1,0 +1,161 @@
+.nav {
+  overflow: hidden;
+  position: fixed;
+  background-color: #fff;
+  z-index: 99999;
+  width: 100%;
+  top: -1%;
+  border-bottom: 1px solid #c5c5c5ec;
+}
+
+.nav-menu {
+  display: none;
+}
+
+.nav-items {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 0.5rem;
+}
+
+.nav-link:not(:first-child) {
+  padding-left: 2.5rem;
+  padding-right: 0.5rem;
+}
+
+.nav a {
+  color: #000;
+}
+
+.nav a:hover {
+  color: #ffd2c1;
+}
+
+.nav .logo {
+  position: relative;
+  left: -5.5rem;
+}
+
+.nav .logo a {
+  color: #000;
+}
+
+.nav .logo a:hover {
+  color: #000;
+}
+
+.nav-link {
+  position: relative;
+}
+
+.nav-link p {
+  position: absolute;
+  background-color: #ffd2c1;
+  border-radius: 50%;
+  padding: 0.1rem 8px;
+  font-size: 1.2rem;
+  top: -30%;
+  left: 75%;
+}
+
+@media (max-width: 765px) {
+  .nav {
+    border-bottom: 1px solid #c5c5c5ec;
+  }
+  .nav-items {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0 1rem;
+    padding-top: 1rem;
+  }
+  .nav-menu {
+    display: block;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .nav-menu > * {
+    width: 3rem;
+  }
+  .nav-left {
+    display: none;
+  }
+  .nav .show {
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+    text-align: left;
+    position: relative;
+    padding: 2rem 0;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    -webkit-animation: slideIn 0.2s forwards;
+            animation: slideIn 0.2s forwards;
+  }
+  .nav .show li {
+    padding: 0.5rem 0;
+    padding-left: 2.5rem;
+    padding-right: 0.5rem;
+  }
+  .nav .logo {
+    position: relative;
+    left: 0rem;
+    font-size: 2.5rem;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .nav-right {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    width: 100%;
+    position: relative;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (max-width: 280px) {
+  .nav-right {
+    position: relative;
+    left: 15%;
+  }
+}
+
+@-webkit-keyframes slideIn {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+  50% {
+    display: block;
+    opacity: 0;
+  }
+  100% {
+    display: block;
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+  50% {
+    display: block;
+    opacity: 0;
+  }
+  100% {
+    display: block;
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=Navbar.css.map */

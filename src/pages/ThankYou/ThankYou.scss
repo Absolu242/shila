@@ -1,0 +1,15 @@
+.thank {
+    &-info {
+        padding: 5rem 0;
+        p {
+            font-size: 1.5rem;
+        }
+    }
+    &-btn {
+        position: relative;
+        margin-top: 16%;
+        button {
+            padding: 1.3rem 1.5rem;
+        }
+    }
+}

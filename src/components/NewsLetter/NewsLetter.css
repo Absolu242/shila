@@ -1,0 +1,37 @@
+.news {
+  position: relative;
+  min-height: 300px;
+  margin-top: 5%;
+}
+
+.news h2 {
+  letter-spacing: 0.8rem;
+}
+
+.news form input {
+  padding: 1.2rem 4rem;
+}
+
+.news form button {
+  padding: 1.2rem 1.5rem;
+  position: relative;
+  left: -4%;
+  top: 0.3rem;
+  outline: none;
+}
+
+.news form button > * {
+  position: relative;
+  top: 0.3rem;
+}
+
+@media (max-width: 768px) {
+  .news {
+    margin-top: 3%;
+    min-height: 200px;
+  }
+  .news h2 {
+    font-size: 2rem;
+  }
+}
+/*# sourceMappingURL=NewsLetter.css.map */

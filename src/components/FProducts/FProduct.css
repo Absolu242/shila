@@ -1,0 +1,12 @@
+.FProduct .grid {
+  height: 100%;
+  -ms-grid-rows: 400px;
+      grid-template-rows: 400px;
+}
+
+@media (max-width: 768px) {
+  .FProduct .Fpro {
+    padding: 3rem 0;
+  }
+}
+/*# sourceMappingURL=FProduct.css.map */

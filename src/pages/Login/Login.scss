@@ -1,0 +1,58 @@
+.login {
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    &-content {
+        max-width: 500px;
+        border: 1px solid;
+        padding: 4rem 2rem;
+    }
+    &-logo {
+        h1 {
+            font-size: 3rem;
+        }
+        p {
+            font-size: 1.4rem;
+        }
+    }
+    .form {
+        &-input {
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            margin: 1rem 0;
+            label {
+                font-size: 1.5rem;
+            }
+            input {
+                width: 30rem;
+                padding: 1rem 0.5rem;
+                margin: 1rem 0;
+                border: 1px solid;
+                &:hover {
+                    border-color: #ffd2c1;
+                }
+            }
+            button {
+                padding: 1rem 0;
+            }
+        }
+        p {
+            font-size: 1.3rem;
+            a {
+                color: #ffd2c1;
+                text-decoration: underline;
+                text-decoration-style: dotted;
+            }
+        }
+    }
+    @media (max-width: 1024px) {
+        min-height: 50vh;
+    }
+    @media (max-width: 768px) {
+        min-height: 80vh;
+    }
+    @media (max-width: 415px) {
+        min-height: 100vh;
+    }
+}

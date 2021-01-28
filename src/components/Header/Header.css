@@ -1,0 +1,39 @@
+.header {
+  min-height: 90vh;
+  background-position-x: 50%;
+  background-position-y: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header button {
+  padding: 1.5rem 3rem;
+  position: relative;
+  top: 4rem;
+  border-radius: 1px;
+}
+
+@media (max-width: 1024px) {
+  .header {
+    background-position-x: 0%;
+    background-position-y: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    background-position-x: 0%;
+    background-position-y: 50%;
+  }
+  .header-content h1 {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 415px) {
+  .header {
+    background-position-x: 0%;
+    background-position-y: 50%;
+  }
+}
+/*# sourceMappingURL=Header.css.map */

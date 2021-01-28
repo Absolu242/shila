@@ -1,0 +1,25 @@
+.profile {
+    &-tabs__info {
+        min-height: 50vh;
+    }
+    &-tabs__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &-tab {
+        padding: 1.5rem 0.5rem;
+        width: 100%;
+        outline-color: none;
+        border: 2px solid;
+    }
+    &-info {
+        .empty-mg {
+            .pink {
+                a {
+                    color: pink;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,338 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+$blackColor: #000;
+$whiteColor: #fff;
+$greyColor: #c5c5c5ec;
+$pinkColor: #ffd2c1;
+html {
+    font-size: 10px;
+}
+
+
+/**base**/
+
+ul,
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/*color*/
+
+.grey {
+    color: $greyColor !important;
+}
+
+.red {
+    color: rgb(250, 58, 58) !important;
+}
+
+.white {
+    color: $whiteColor !important;
+}
+
+.black {
+    color: $blackColor;
+}
+
+.pink {
+    color: $pinkColor !important;
+}
+
+.border-red {
+    border: 1px solid rgb(250, 58, 58) !important;
+}
+
+
+/*bkg*/
+
+.bg-pink {
+    background-color: $pinkColor;
+}
+
+.bg-grey {
+    background-color: $greyColor;
+}
+
+.bg {
+    background-position-x: 50%;
+    background-position-y: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/*Buttons*/
+
+.btn {
+    border: none;
+    cursor: pointer;
+    background: none;
+    outline: none;
+}
+
+.btn-round {
+    border-radius: 50%;
+}
+
+.btn-white {
+    background-color: $whiteColor;
+    color: $blackColor;
+}
+
+.btn-black {
+    background-color: $blackColor;
+    color: $whiteColor;
+}
+
+
+/*Layout*/
+
+.container {
+    max-width: 1115px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.grid {
+    display: grid;
+    gap: 20px;
+    justify-content: center;
+    transition: all 0.3s;
+    @media (max-width: 768px) {
+        grid-template-columns: 280px 280px;
+        grid-template-rows: auto;
+    }
+    @media (max-width: 415px) {
+        grid-template-columns: 280px;
+        grid-template-rows: auto;
+    }
+}
+
+.grid-2 {
+    grid-template-columns: repeat(2, 1fr);
+    transition: all 0.3s;
+    @media (max-width: 768px) {
+        grid-template-columns: 280px 280px;
+        grid-template-rows: auto;
+    }
+    @media (max-width: 415px) {
+        grid-template-columns: 280px;
+        grid-template-rows: auto;
+    }
+}
+
+.grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+    transition: all 0.3s;
+    @media (max-width: 768px) {
+        grid-template-columns: 280px 280px;
+        grid-template-rows: auto;
+    }
+    @media (max-width: 415px) {
+        grid-template-columns: 280px;
+        grid-template-rows: auto;
+    }
+}
+
+.grid-4 {
+    grid-template-columns: repeat(4, 1fr);
+    transition: all 0.3s;
+    @media (max-width: 768px) {
+        grid-template-columns: 280px 280px;
+        grid-template-rows: auto;
+    }
+    @media (max-width: 415px) {
+        grid-template-columns: 280px;
+        grid-template-rows: auto;
+    }
+}
+
+.text-center {
+    text-align: center;
+    justify-content: center;
+}
+
+
+/*Font-size*/
+
+.f-lead {
+    font-size: 1.5rem;
+}
+
+.f-xs {
+    font-size: 1.2rem !important;
+}
+
+.f-sm {
+    font-size: 1.5rem;
+}
+
+.f-md {
+    font-size: 2rem;
+}
+
+.f-l {
+    font-size: 2.5rem;
+}
+
+.f-xl {
+    font-size: 3.5rem;
+}
+
+.f-xxl {
+    font-size: 5rem;
+}
+
+
+/*Font-weight*/
+
+.f-bold {
+    font-weight: bold;
+}
+
+.f-lighter {
+    font-weight: lighter;
+}
+
+.f-bolder {
+    font-weight: bolder;
+}
+
+
+/*Margin  Y*/
+
+.my-1 {
+    margin: 1rem 0;
+}
+
+.my-2 {
+    margin: 1.5rem 0;
+}
+
+.my-3 {
+    margin: 2rem 0;
+}
+
+.my-4 {
+    margin: 3rem 0;
+}
+
+.my-5 {
+    margin: 4rem 0;
+}
+
+
+/**Full margin**/
+
+.m-1 {
+    margin: 1rem;
+}
+
+.m-2 {
+    margin: 1.5rem;
+}
+
+.m-3 {
+    margin: 2rem;
+}
+
+.m-4 {
+    margin: 3rem;
+}
+
+.m-5 {
+    margin: 4rem;
+}
+
+
+/*Padding  Y*/
+
+.py-1 {
+    padding: 1rem 0;
+}
+
+.py-2 {
+    padding: 1.5rem 0;
+}
+
+.py-3 {
+    padding: 2rem 0;
+}
+
+.py-4 {
+    padding: 3rem 0;
+}
+
+.py-5 {
+    padding: 4rem 0;
+}
+
+
+/**Full padding**/
+
+.p-1 {
+    padding: 1rem;
+}
+
+.p-2 {
+    padding: 1.5rem;
+}
+
+.p-3 {
+    padding: 2rem;
+}
+
+.p-4 {
+    padding: 3rem;
+}
+
+.p-5 {
+    padding: 4rem;
+}
+
+
+/*heihts*/
+
+.h-2 {
+    min-height: 200px;
+}
+
+.h-3 {
+    height: 300px;
+}
+
+.h-4 {
+    min-height: 400px;
+}
+
+.h-5 {
+    min-height: 500px;
+}
+
+.h-6 {
+    min-height: 600px;
+}
+
+.h-full {
+    min-height: 100vh;
+}
+
+.w-2 {
+    min-width: 100%;
+}

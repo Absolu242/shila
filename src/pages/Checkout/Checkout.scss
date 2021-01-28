@@ -1,0 +1,152 @@
+.checkout {
+    &-main {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: auto;
+        gap: 100px;
+        @media (max-width: 1024px) {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0;
+            flex-direction: column-reverse;
+            width: inherit;
+        }
+    }
+    &-left {
+        width: 100%;
+        @media (max-width: 1024px) {
+            width: inherit;
+        }
+        .form {
+            &-user {
+                padding: 2rem 0;
+            }
+            &-shipping {
+                h3 {
+                    font-size: 20px;
+                    font-weight: bold;
+                }
+            }
+            &-row {
+                display: flex;
+                justify-content: space-between;
+                @media (max-width: 768px) {
+                    flex-direction: column;
+                }
+            }
+            &-input {
+                display: flex;
+                flex-direction: column;
+                padding: 1rem 0;
+                @media (max-width: 768px) {
+                    padding: 2rem 0;
+                }
+                label {
+                    font-size: 15px;
+                }
+                input {
+                    width: 28rem;
+                    padding: 1.4rem 0;
+                }
+                select {
+                    padding: 1.2rem 1.5rem;
+                    width: 28rem;
+                    outline-color: none;
+                    border: 1px solid;
+                }
+                button {
+                    width: 28rem;
+                    padding: 1rem 4.5rem;
+                }
+            }
+            &-input.pay {
+                flex-direction: row;
+                width: 28rem;
+                align-items: center;
+                border: 1px solid;
+                cursor: pointer;
+                input {
+                    width: fit-content;
+                    margin: 0 2rem;
+                }
+            }
+            &-payment {
+                padding: 2rem 0;
+                h3 {
+                    font-size: 20px;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+    &-right {
+        width: 29rem;
+    }
+    &-orders {
+        width: 90%;
+        padding: 3.3rem 0;
+        &>p {
+            font-size: 15px;
+            border-bottom: 1px solid #c5c5c5ec;
+        }
+        @media (max-width: 768px) {
+            width: 100%;
+        }
+    }
+    &-item {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #c5c5c5ec;
+    }
+    &-image {
+        margin: 1rem;
+        margin-left: 0;
+        position: relative;
+        height: 120px;
+        width: 30%;
+    }
+    &-vari {
+        p {
+            padding: 1rem 0;
+            padding-right: 1rem;
+            font-size: 15px;
+        }
+    }
+    &-price {
+        p {
+            padding-right: 1rem;
+            font-size: 15px;
+        }
+    }
+    &-discount {
+        display: flex;
+        justify-content: space-between;
+        font-size: 15px;
+        span {
+            font-weight: bold;
+        }
+        p {
+            font-size: 15px;
+        }
+        span {
+            position: relative;
+            justify-self: flex-start;
+        }
+    }
+    &-total {
+        display: flex;
+        justify-content: space-between;
+        font-size: 25px;
+        padding: 2rem 0;
+        span {
+            font-weight: bold;
+        }
+    }
+    &-button {
+        button {
+            padding: 1rem 4.5rem;
+        }
+    }
+}

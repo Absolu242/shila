@@ -1,0 +1,37 @@
+$pinkColor: #ffd2c1;
+footer {
+    width: 100%;
+    border-top: 1px solid grey;
+    margin-top: 10%;
+}
+
+.footer {
+    &-top {
+        min-height: 30vh;
+        a {
+            color: #000;
+            &:hover {
+                color: $pinkColor;
+            }
+        }
+    }
+    &-links {
+        position: relative;
+        left: 15%;
+    }
+    &-link {
+        padding: 0 2rem;
+    }
+    &-social-link {
+        padding: 2rem 3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-links {
+        left: 0;
+    }
+    .footer-social-link {
+        padding: 2rem 1rem;
+    }
+}

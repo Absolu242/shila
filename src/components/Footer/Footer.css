@@ -1,0 +1,40 @@
+footer {
+  width: 100%;
+  border-top: 1px solid grey;
+  margin-top: 10%;
+}
+
+.footer-top {
+  min-height: 30vh;
+}
+
+.footer-top a {
+  color: #000;
+}
+
+.footer-top a:hover {
+  color: #ffd2c1;
+}
+
+.footer-links {
+  position: relative;
+  left: 15%;
+}
+
+.footer-link {
+  padding: 0 2rem;
+}
+
+.footer-social-link {
+  padding: 2rem 3rem;
+}
+
+@media (max-width: 768px) {
+  .footer-links {
+    left: 0;
+  }
+  .footer-social-link {
+    padding: 2rem 1rem;
+  }
+}
+/*# sourceMappingURL=Footer.css.map */

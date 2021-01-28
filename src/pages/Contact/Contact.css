@@ -1,0 +1,33 @@
+.contact-text-content {
+  width: 60%;
+}
+
+@media (max-width: 768px) {
+  .contact-info {
+    -ms-grid-columns: 300px;
+        grid-template-columns: 300px;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+  }
+}
+
+.contact-info-item {
+  border: 1px solid;
+  padding: 2rem 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact-info-item span {
+  padding: 0.5rem 0;
+}
+
+.contact-info-map {
+  margin-top: 8%;
+}
+/*# sourceMappingURL=Contact.css.map */

@@ -1,0 +1,87 @@
+.sprod {
+    &-first {
+        margin: 2% 0;
+    }
+    &-desc {
+        h2 {
+            font-size: 2.5rem;
+        }
+    }
+    &-mid {
+        padding: 3rem 0;
+    }
+    &-vari {
+        display: flex;
+        width: 100%;
+        &-item {
+            margin-right: 1rem;
+            select {
+                padding: 1.2rem 1rem;
+                width: 12rem;
+                outline-color: none;
+            }
+        }
+    }
+    &-btn {
+        padding: 1rem 0;
+        button {
+            margin-right: 1rem;
+            padding: 1.3rem 2rem;
+            outline-color: none;
+            &> :first-child {
+                position: relative;
+                top: 0.5rem;
+            }
+            &.btn-white {
+                @media (max-width: 768px) {
+                    padding: 1.5rem 0;
+                }
+            }
+        }
+    }
+    &-smdesc {
+        p {
+            font-size: 1.3rem;
+        }
+    }
+    &-second {
+        margin: 5% 0;
+        .sprod-tab {
+            width: 100%;
+            &-title {
+                .tab-btn {
+                    background: none;
+                    margin: 0 2rem;
+                    color: gray;
+                }
+                .tab-active {
+                    color: #000;
+                    border-bottom: 1px solid;
+                }
+            }
+            &-content {
+                display: flex;
+                justify-content: center;
+            }
+            &-item {
+                width: 50%;
+                p {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+}
+
+.sprod .grid-2 {
+    grid-template-rows: 500px;
+    gap: 50px;
+    grid-template-columns: 400px 400px;
+    @media (max-width: 768px) {
+        .grid-item {
+            height: 40rem;
+        }
+        grid-template-columns: 280px;
+        grid-template-rows: auto;
+    }
+}

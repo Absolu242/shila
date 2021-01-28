@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AACK,AAAD,WAAM,CAAC;EACH,OAAO,EAAE,MAAM;CAIlB;;AALA,AAEG,WAFE,CAEF,CAAC,CAAC;EACE,SAAS,EAAE,MAAM;CACpB;;AAEJ,AAAD,UAAK,CAAC;EACF,QAAQ,EAAE,QAAQ;EAClB,UAAU,EAAE,GAAG;CAIlB;;AANA,AAGG,UAHC,CAGD,MAAM,CAAC;EACH,OAAO,EAAE,aAAa;CACzB",
+    "sources": [
+        "ThankYou.scss"
+    ],
+    "names": [],
+    "file": "ThankYou.css"
+}

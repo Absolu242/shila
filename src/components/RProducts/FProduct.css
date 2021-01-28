@@ -1,0 +1,8 @@
+.FProduct .grid {
+    height: 100%;
+    -ms-grid-rows: 400px;
+    grid-template-rows: 400px;
+}
+
+
+/*# sourceMappingURL=FProduct.css.map */

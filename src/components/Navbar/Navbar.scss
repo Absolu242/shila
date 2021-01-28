@@ -1,0 +1,122 @@
+$blackColor: #000;
+$whiteColor: #fff;
+$pinkColor: #ffd2c1;
+.nav {
+    overflow: hidden;
+    position: fixed;
+    background-color: #fff;
+    z-index: 99999;
+    width: 100%;
+    top: -1%;
+    border-bottom: 1px solid #c5c5c5ec;
+    &-menu {
+        display: none;
+    }
+    &-items {
+        justify-content: space-between;
+        padding-top: 0.5rem;
+    }
+    &-link:not(:first-child) {
+        padding-left: 2.5rem;
+        padding-right: 0.5rem;
+    }
+    a {
+        color: $blackColor;
+        &:hover {
+            color: $pinkColor;
+        }
+    }
+    .logo {
+        position: relative;
+        left: -5.5rem;
+        a {
+            color: $blackColor;
+            &:hover {
+                color: $blackColor;
+            }
+        }
+    }
+    &-link {
+        position: relative;
+        p {
+            position: absolute;
+            background-color: #ffd2c1;
+            border-radius: 50%;
+            padding: 0.1rem 8px;
+            font-size: 1.2rem;
+            top: -30%;
+            left: 75%;
+        }
+    }
+}
+
+@media (max-width: 765px) {
+    .nav {
+        border-bottom: 1px solid #c5c5c5ec;
+        &-items {
+            align-items: center;
+            padding: 0 1rem;
+            padding-top: 1rem;
+        }
+        &-menu {
+            display: block;
+            order: 2;
+            &>* {
+                width: 3rem;
+            }
+        }
+        &-left {
+            display: none;
+        }
+        .show {
+            order: 4;
+            text-align: left;
+            position: relative;
+            padding: 2rem 0;
+            transition: all 0.3s;
+            animation: slideIn 0.2s forwards;
+            li {
+                padding: 0.5rem 0;
+                padding-left: 2.5rem;
+                padding-right: 0.5rem;
+            }
+        }
+        .logo {
+            position: relative;
+            left: 0rem;
+            font-size: 2.5rem;
+            order: 1;
+        }
+        &-right {
+            order: 3;
+            width: 100%;
+            position: relative;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}
+
+@media (max-width: 280px) {
+    .nav {
+        &-right {
+            position: relative;
+            left: 15%;
+        }
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        display: none;
+        opacity: 0;
+    }
+    50% {
+        display: block;
+        opacity: 0;
+    }
+    100% {
+        display: block;
+        opacity: 1;
+    }
+}

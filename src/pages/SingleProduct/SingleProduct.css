@@ -1,0 +1,110 @@
+.sprod-first {
+  margin: 2% 0;
+}
+
+.sprod-desc h2 {
+  font-size: 2.5rem;
+}
+
+.sprod-mid {
+  padding: 3rem 0;
+}
+
+.sprod-vari {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.sprod-vari-item {
+  margin-right: 1rem;
+}
+
+.sprod-vari-item select {
+  padding: 1.2rem 1rem;
+  width: 12rem;
+  outline-color: none;
+}
+
+.sprod-btn {
+  padding: 1rem 0;
+}
+
+.sprod-btn button {
+  margin-right: 1rem;
+  padding: 1.3rem 2rem;
+  outline-color: none;
+}
+
+.sprod-btn button > :first-child {
+  position: relative;
+  top: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .sprod-btn button.btn-white {
+    padding: 1.5rem 0;
+  }
+}
+
+.sprod-smdesc p {
+  font-size: 1.3rem;
+}
+
+.sprod-second {
+  margin: 5% 0;
+}
+
+.sprod-second .sprod-tab {
+  width: 100%;
+}
+
+.sprod-second .sprod-tab-title .tab-btn {
+  background: none;
+  margin: 0 2rem;
+  color: gray;
+}
+
+.sprod-second .sprod-tab-title .tab-active {
+  color: #000;
+  border-bottom: 1px solid;
+}
+
+.sprod-second .sprod-tab-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.sprod-second .sprod-tab-item {
+  width: 50%;
+}
+
+.sprod-second .sprod-tab-item p {
+  font-size: 1.5rem;
+}
+
+.sprod .grid-2 {
+  -ms-grid-rows: 500px;
+      grid-template-rows: 500px;
+  gap: 50px;
+  -ms-grid-columns: 400px 400px;
+      grid-template-columns: 400px 400px;
+}
+
+@media (max-width: 768px) {
+  .sprod .grid-2 {
+    -ms-grid-columns: 280px;
+        grid-template-columns: 280px;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+  }
+  .sprod .grid-2 .grid-item {
+    height: 40rem;
+  }
+}
+/*# sourceMappingURL=SingleProduct.css.map */

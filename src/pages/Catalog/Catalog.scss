@@ -1,0 +1,22 @@
+.cata {
+    h2 {
+        letter-spacing: 0.5rem;
+    }
+    &-products {
+        grid-template-rows: auto;
+    }
+    &-filters {
+        @media (max-width: 768px) {
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: auto;
+        }
+        .cata-ctg {
+            select {
+                padding: 1.5rem 0.5rem;
+                width: 100%;
+                outline-color: none;
+                border: 2px solid;
+            }
+        }
+    }
+}

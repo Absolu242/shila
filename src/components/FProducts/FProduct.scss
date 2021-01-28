@@ -1,0 +1,11 @@
+.FProduct {
+    .grid {
+        height: 100%;
+        grid-template-rows: 400px;
+    }
+    @media (max-width: 768px) {
+        .Fpro {
+            padding: 3rem 0;
+        }
+    }
+}

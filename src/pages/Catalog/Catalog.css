@@ -1,0 +1,25 @@
+.cata h2 {
+  letter-spacing: 0.5rem;
+}
+
+.cata-products {
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+}
+
+@media (max-width: 768px) {
+  .cata-filters {
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+  }
+}
+
+.cata-filters .cata-ctg select {
+  padding: 1.5rem 0.5rem;
+  width: 100%;
+  outline-color: none;
+  border: 2px solid;
+}
+/*# sourceMappingURL=Catalog.css.map */

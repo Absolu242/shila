@@ -1,0 +1,27 @@
+.profile-tabs__info {
+  min-height: 50vh;
+}
+
+.profile-tabs__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.profile-tab {
+  padding: 1.5rem 0.5rem;
+  width: 100%;
+  outline-color: none;
+  border: 2px solid;
+}
+
+.profile-info .empty-mg .pink a {
+  color: pink;
+}
+/*# sourceMappingURL=Profile.css.map */
